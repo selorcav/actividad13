@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+	<title>Ejercicio 04</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../_assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <button class="add_name">+</button>
+  <ul class="names"></ul>
+  <script>
+  	$(function(){
+  		
+  		
+  		$(".add_name").click(function(){
+
+  			var data = prompt('Por favor agrega un nombre a la lista');
+  			$(".names").append('<li><span>' + data + '</span> <a class="remove_name" href="">Remove name</a></li>');
+
+  			// $(".add_name").prompt('Por favor agrega un nombre a la lista');
+  		})
+  	})
+  </script>
+
+</body>
+</html>
